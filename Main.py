@@ -1,6 +1,6 @@
 import numpy
-if __name__ == 'main':
+if __name__ == "__main__":
 	print("c00l")
-def insane(self):
-	for i in 10:
+def insane():
+	for i in range(10):
 		print("not cool!")
