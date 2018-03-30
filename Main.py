@@ -4,3 +4,5 @@ if __name__ == "__main__":
 def insane():
 	for i in range(10):
 		print("not cool!")
+
+#BOYZZZ
