@@ -31,4 +31,4 @@ def main():
 		if i == 0:
 			previousArray = np.zeros(dimensions)
 		#we might have to declare timeArray beforehand (timeArray = np.zeros(dimensions))
-		timeArray, previousArray = timeMatrix(currentArray, previousArray)
+		timeArray, previousArray = timeMatrix(inputArray, previousArray)
