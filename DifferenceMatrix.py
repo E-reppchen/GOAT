@@ -18,3 +18,6 @@ def differenceMatrix(dimensions, inputArray, n):
               diffArray[point[0]][point[1]][point[2]] += percentDiff
               timeUsedArray[point[0]][point[1]][point[2]] += 1
         localAv = 0
+    
+  for i, j, k in diffArray:
+    diffArray[i][j][k] = diffArray[i][j][k]/timeUsedArray[i][j][k]
