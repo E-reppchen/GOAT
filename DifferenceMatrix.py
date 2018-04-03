@@ -17,3 +17,4 @@ def differenceMatrix(dimensions, inputArray, n):
               percentDiff = (abs(inputArray[point[0]][point[1]][point[2]] - localAv))/localAv*100
               diffArray[point[0]][point[1]][point[2]] += percentDiff
               timeUsedArray[point[0]][point[1]][point[2]] += 1
+        localAv = 0
