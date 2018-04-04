@@ -8,12 +8,12 @@ def differenceMatrix(dimensions, inputArray, n):
   diffArray = np.zeros(dimensions)
   timeUsedArray = np.zeros(dimensions)
   localAv = 0
-  for i in range(point[2], z):
+  for i in range(point[2], z+1):
     point2[1] = n
     point2[0] = n
-    for i in range(point[1], y):
+    for i in range(point[1], y+1):
       point2[0] = n
-      for i in range(point[0], x):
+      for i in range(point[0], x+1):
         for j in range(point2[2] - n, point[2]+1): 
           for k in range(point2[1] - n, point[1]+1):
             for l in range(point2[0] - n, point[0]+1):
@@ -30,9 +30,9 @@ def differenceMatrix(dimensions, inputArray, n):
       point2[1] += 1 
     point2[2] += 1
     
-  for i in range(z):
-    for j in range(y):
-      for k in range(x):
+  for i in range(z+1):
+    for j in range(y+1):
+      for k in range(x+1):
         diffArray[k][j][i] = diffArray[k][j][i]/timeUsedArray[k][j][i]
   
   return diffArray
