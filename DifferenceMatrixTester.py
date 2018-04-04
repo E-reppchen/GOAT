@@ -10,6 +10,7 @@ def differenceMatrix(dimensions, inputArray, n):
   localAv = 0
   for i in range(point[2], z):
     point2[1] = n
+    point2[0] = n
     for i in range(point[1], y):
       point2[0] = n
       for i in range(point[0], x):
@@ -21,8 +22,7 @@ def differenceMatrix(dimensions, inputArray, n):
         for j in range(point2[2] - n, point2[2]+1):
           for k in range(point2[1] - n, point2[1]+1):
             for l in range(point2[0] - n, point2[0]+1):
-              percentDiff = (abs(inputArray[l][k][j] - localAv))/localAv*100.00
-              
+              percentDiff = (abs(inputArray[l][k][j] - localAv))/localAv*100.00        
               diffArray[l][k][j] += percentDiff
               timeUsedArray[l][k][j] += 1
         point2[0] += 1
